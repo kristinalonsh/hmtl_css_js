@@ -1,0 +1,96 @@
+
+h1 {color: #281d29;}
+
+h2 {color: #281d29;}
+
+a {color: #5b2a61; /* цвет ссылки */
+    text-decoration: none;
+}
+
+a::before {
+    margin-right: 5px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 3px;}
+
+li::before {
+    content: '★';
+    padding-right: 10px;
+}
+
+li span {
+    float: right;
+    font-size: 0.8rem;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    color: antiquewhite;
+    background: #281d29;
+    text-align: center;
+    line-height: 20px;
+}
+
+img {
+    border-radius: 7%;
+}
+
+table {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 2px solid white; /* Прячем рамку вокруг таблицы */
+}
+
+td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #281d29; /* Параметры рамки */
+    text-align: left; /* Выравнивание по левому краю */
+    padding: 6px 15px;
+}
+th {text-align: center}
+
+.header {
+    background-color: #fcf7fd;
+    padding:1px;
+    border-left: 3px solid #281d29;
+
+}
+
+.footer {
+    background-color: #fcf7fd;
+    border-left: 1px solid #281d29;
+    padding: 20px;
+}
+
+.nav {
+    margin: 10px;
+}
+
+.fig {
+    float: left;
+    margin: 0 20px 20px 20px;
+}
+
+.stikerLeft {
+    float: left;}
+
+.stikerRight {
+    float: right;}
+
+.stikerLeft, .stikerRight {
+    background: #f5d5fd; /* Цвет фона */
+    color: #281d29; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 0 0 10px 10px; /* Отступы вокруг */
+    width: 30%;
+    border: 5px dashed #f5d5fd; /* Параметры рамки */
+    background-clip: padding-box; /* Фон внутри рамки */
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
