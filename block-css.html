@@ -5,12 +5,29 @@
     <title>Title</title>
 </head>
 <style>
-  .menu li { display: inline; }
-  blockquote { background: yellow; height: 50px; width: 100px; }
+    section {
+        background: gold;
+        height: 100px;
+        padding: 10px;
+        position: relative; /* Превращает <section> в точку отсчёта для <p> */
+    }
+
+    p {
+        background: limegreen;
+        color: white;
+        padding: 10px;
+        position: absolute; /* Делает <p> свободно перемещаемым */
+        bottom: 10px; /* 10px снизу */
+        left: 20px; /* 20px слева */
+    }
 </style>
 <body>
 
-<blockquote>Содержимое, эмм..., находит путь</blockquote>
-
+<section>
+    Я позиционирован относительно.
+    <p>
+        Я позиционирован абсолютно!
+    </p>
+</section>
 </body>
 </html>

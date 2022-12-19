@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- настройка видового экрана - адаптация под разные размеры экранов -->
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- настройка видового экрана - адаптация под разные размеры экранов -->
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Резюме</title>
 </head>
 <body>
-<div style="margin: 20px 20%">
     <header>
         <div class="header">
+            <nav class="nav">
+                <a href="index.html">Главная</a> |
+                <a href="portfolio.html">Портфолио</a> |
+                <a href="margin.html">Margin-свойство</a>
+            </nav>
             <h1>Резюме-портфолио</h1>
         </div>
     </header>
 
-    <nav class="nav">
-        <a href="index.html">Главная</a> |
-        <a href="portfolio.html">Портфолио</a> |
-        <a href="margin.html">Margin-свойство</a>
-    </nav>
+    <div class="messenger">
+        <div id="messenger-links" class="messenger-links">
+            <a title="Позвонить" href="tel:+120345678910"><img src="https://volgo-prime.ru/img/icons/phone-icon.svg" alt="Позвонить"></a>
+            <a title="Whatsapp" href="https://wa.me/79145825700"><img src="https://volgo-prime.ru/img/icons/whatsapp-icon.svg" alt="Whatsapp"></a>
+            <a title="Viber" href="viber://chat?number=79145825700"><img src="https://volgo-prime.ru/img/icons/viber-icon.svg" alt="Viber"></a>
+            <a title="Вконтакте" href="https://vk.com/kristina-lonsh"><img src="https://volgo-prime.ru/img/icons/vk-icon.svg" alt="Вконтакте"></a>
+        </div>
+    </div>
 
     <main>
-    <section class="clearfix">
-        <img src="avatar.jpg" alt="Фото автора" width="200" class="fig">
-        <h1>Лоншакова Кристина</h1>
-        <p><em>На данный момент я прохожу обучение в <strong>Веб-студии Z-labs</strong></em></p>
-        <p>Я обожаю <strong>езду на рулём</strong> и создерцание <strong>красоты вокруг</strong></p>
-    </section>
+    <div class="info">
+        <img src="avatar.jpg" alt="Фото автора" class="avatars">
+        <div class="info-text">
+            <h2>Лоншакова Кристина</h2>
+            <p>На данный момент я прохожу обучение в <strong>Веб-студии Z-labs</strong></p>
+            <p>Обожаю <strong>трассу</strong> и единение с <strong>природой</strong></p>
 
-    <section class="clearfix">
-        <div style class="stikerLeft">
-            <h2>Мои увлечения</h2>
-            <ol>
-                <li>Автопутешествия</li>
-                <li>Handmade</li>
-                <li>Видеообзоры</li>
-            </ol>
+            <h4>Мои социальные сети</h4>
+            <a href="https://intagram.com/kristina_lonsh" target="_blank">Инстаграм</a> |
+            <a href="https://vk.com/kristina_lonsh" target="_blank">ВКонтакте</a>
         </div>
+    </div>
 
-        <div style class="stikerLeft">
-            <h2>Мои социальные сети</h2>
-            <ul>
-                <li><span>160</span><a href="https://intagram.com/kristina_lonsh" target="_blank">Инстаграм</a></li>
-                <li><span>120</span><a href="https://vk.com/kristina_lonsh" target="_blank">ВКонтакте</a></li>
-            </ul>
-        </div>
-    </section>
-    <hr/>
-    <h2>Опыт работы</h2>
-    <table cellspacing="15">
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Период</th>
-        </tr>
+    <div style class="card bg-yellow">
+        <h2>Мои увлечения</h2>
+        <ol class="list">
+            <li>Автопутешествия</li>
+            <li>Handmade</li>
+            <li>Видеообзоры</li>
+        </ol>
+    </div>
 
-        <tr>
-            <td>Веб-студия</td>
-            <td>Developer</td>
-            <td>2022 - н.в.</td>
-        </tr>
+    <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
 
-        <tr>
-            <td>ООО ТК</td>
-            <td>Руководитель проектов</td>
-            <td>2020 - 2022</td>
-        </tr>
+            <tr>
+                <td>Веб-студия</td>
+                <td>Developer</td>
+                <td>2022 - н.в.</td>
+            </tr>
 
-        <tr>
-            <td>ООО ГудНет</td>
-            <td>Руководитель отдела продаж</td>
-            <td>2015 - 2020</td>
-        </tr>
+            <tr>
+                <td>ООО ТК</td>
+                <td>Руководитель проектов</td>
+                <td>2020 - 2022</td>
+            </tr>
 
-    </table>
-    <hr/>
-    <h2>Портфолио</h2>
-    <a href="portfolio.html" target="_blank">Мои работы</a>
-    <hr/>
+            <tr>
+                <td>ООО ГудНет</td>
+                <td>Руководитель отдела продаж</td>
+                <td>2015 - 2020</td>
+            </tr>
+        </table>
+    </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите Ваше имя">
-        <br/>
-        <label for="email">Ваш e-mail</label>
-        <input type="text" id="email" placeholder="Введите Ваш email">
-        <br/>
-        <label for="massage">Ваше сообщение</label>
-        <br/>
-        <textarea id="massage"></textarea>
-        <br/>
-        <input type="submit" value="Отправить">
-    </form>
+    <div class="card bg-red">
+        <h2>Портфолио</h2>
+        <ul class="link-list">
+            <li><a href="portfolio.html" target="_blank">Интернет-магазин на базе 1C-Bitrix</a></li>
+            <li><a href="portfolio.html" target="_blank">Сайты на базе Wordpress</a></li>
+            <li><a href="portfolio.html" target="_blank">Лендинги Tilda</a></li>
+        </ul>
+    </div>
 
-    <p><a href="mailto:kristina-lonsh@mail.ru?Вопрос по резюме">Написать на электронную почту</a></p>
-    <p><a href="tel:+79145825700">Позвонить</a></p>
+    <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите Ваше имя...">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш e-mail</label>
+                    <input type="text" id="email" placeholder="Введите Ваш e-mail...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="massage">Ваше сообщение</label>
+                <textarea id="massage"></textarea>
+            </div>
+
+            <input type="submit" value="Отправить" class="btn">
+        </form>
+    </div>
     </main>
 
     <footer class="footer">
-        <author>Лоншакова Кристина</author>
         <cite>Амурская обл., г. Благовещенск</cite>
+        <p>2022</p>
     </footer>
-</div>
+
 </body>
 </html>
