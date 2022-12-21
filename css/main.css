@@ -1,6 +1,8 @@
-
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 body {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Lato, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.45px;
 }
 
 
@@ -103,7 +105,7 @@ cite {
     max-width: 1200px;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     background-color: #fcf7fd;
     padding-bottom: 1px;
     border-left: 3px solid #281d29;
@@ -256,7 +258,65 @@ cite {
     text-decoration: none;
 }
 
-/*ес ли ширина окга или экрана меньше 700px, то изменить следующие свойства у следующих классов*/
+
+/*свойства для страницы margin.html*/
+section {
+    text-align: center;
+}
+
+.jwel {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    width: 80%;
+    margin: auto;
+}
+
+.jwel td {
+    border: 1px solid #281d29; /* Параметры рамки */
+    padding: 6px 15px;
+}
+
+.jwel td:nth-child(3) {
+    text-align: center; /* Выравнивание по центру для третьего по счету столбца */
+}
+
+.jwel th {text-align: center;
+    padding: 5px 15px}
+
+.weather {
+    width: 130px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 15px;
+    background: #2962a9;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.signIn {
+    border: 1px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+.signIn input {
+    margin: 7px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.signIn div:first-child { margin: 0; }
+
+
+
+/*если ширина окна или экрана меньше 700px, то изменить следующие свойства у следующих классов*/
 @media (max-width: 700px) {
     .info {
         display: block; /*аватар и инфо на разных строках*/
