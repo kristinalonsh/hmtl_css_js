@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+body {
+    font-family: Lato, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.45px;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+h1 {color: #281d29;
+    text-indent: 10px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h2 {color: #281d29;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+a {color: #5b2a61; /* цвет ссылки */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: grey;
+}
+
+cite {
+    font-style: normal;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table {
+    width: 100%;
+    /*border-collapse: collapse; !* Убираем двойные линии между ячейками *!*/
+    /*border: 2px solid white; !* Прячем рамку вокруг таблицы *!*/
+    /*cellspacing: 15px;*/
+}
+
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    color: #86898f
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+    background-color: #fcf7fd;
+    padding-bottom: 1px;
+    border-left: 3px solid #281d29;
+
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 0;
+    background-color: #fcf7fd;
+    border-left: 1px solid #281d29;
+    padding: 5px;
+    text-align: center;
+    color: #86898f;
+    font-size: 12px;
+}
+
+.footer p {
+    margin-top: 3px;
+}
+
+
+.nav {
+    margin: 10px 20px;
+
+
+}
+
+.avatars {
+    width: 200px;
+    margin: 0 20px 20px 20px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0,0,0,0.25);
+}
+
+.info {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.info-text h4 {
+    margin-bottom: 5px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent; /*прозрачный фон input*/
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none; /* при наведении на Input не будет синей рамки*/
+    font-family: inherit; /*щрифт наследуется от родителя */
+}
+
+.btn {
+    background: #111;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer; /*при наведении на кнопку менять вид курсора */
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/*Для form-group входящей в состав row установить ширину 50% и отступ справа 20px*/
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+/*Для последнего элемента form-group, входящего в состав row - убрать отступ справа*/
+.row > .form-group:last-child {
+    margin-right: 0;
+}
+
+.stikerLeft {
+    float: left;
+}
+
+.stikerRight {
+    float: right;}
+
+.stikerLeft, .stikerRight {
+    background: #f5d5fd; /* Цвет фона */
+    color: #281d29; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 0 0 10px 10px; /* Отступы вокруг */
+    width: 30%;
+    border: 5px dashed #f5d5fd; /* Параметры рамки */
+    background-clip: padding-box; /* Фон внутри рамки */
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.messenger {
+    display: flex;
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    width: 50px;
+}
+
+
+.messenger-links a {
+    width: 40px;
+    margin-left: 4px;
+}
+.messenger-links img {
+    max-width: 40px;
+}
+.messenger-links a:hover img {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+
+/*свойства для страницы margin.html*/
+section {
+    text-align: center;
+}
+
+.jwel {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    width: 80%;
+    margin: auto;
+}
+
+.jwel td {
+    border: 1px solid #281d29; /* Параметры рамки */
+    padding: 6px 15px;
+}
+
+.jwel td:nth-child(3) {
+    text-align: center; /* Выравнивание по центру для третьего по счету столбца */
+}
+
+.jwel th {text-align: center;
+    padding: 5px 15px}
+
+.weather {
+    width: 130px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 15px;
+    background: #2962a9;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.signIn {
+    border: 1px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+.signIn input {
+    margin: 7px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.signIn div:first-child { margin: 0; }
+
+
+
+/*если ширина окна или экрана меньше 700px, то изменить следующие свойства у следующих классов*/
+@media (max-width: 700px) {
+    .info {
+        display: block; /*аватар и инфо на разных строках*/
+        text-align: center; /*инфо выраснивается по центру*/
+    }
+
+    .messenger {
+        width: 30px; /*уменьшается шири на блока с мессенджерами*/
+    }
+
+    .messenger-links img {
+        max-width: 25px; /*уменьшаются иконки месенджеров*/
+    }
+
+
+}

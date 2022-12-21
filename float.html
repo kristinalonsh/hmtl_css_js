@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Стрелки</title>
+    <style>
+        .arrow {
+            font-size: 2em; /* Размер стрелок */
+            background: #e7e7e0; /* Цвет фона */
+            overflow: hidden; /* Отменяем обтекание */
+            color: #d51920; /* Цвет стрелок */
+        }
+        .prev { float: left; }
+        .next {
+            float: right;
+            text-align: right; /* Выравнивание по правому краю */
+        }
+        .round {
+            float: right; /* Выравнивание по правому краю */
+            border-radius: 150px; /* Радиус скругления */
+            border: 1px solid #6f6f6f; /* Параметры рамки */
+            position: relative;
+            margin-left: 20px;
+        }
+        .grayBack {
+            background: rgba(47,33,31,0.2);
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="arrow">
+    <div class="prev">←</div>
+    <div class="next">→</div>
+</div>
+
+<div class="grayBack">
+    <section class="clearfix">
+    <img src="shay-howe.jpg" class="round">
+    <h1 align="right">Шей Хоу</h1>
+    <p style = "text-align : right">Специализируется на дизайне и разработке интерфейсов, о чем периодически пишет и говорит.</p>
+    </section>
+</div>
+
+
+</body>
+</html>

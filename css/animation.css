@@ -1,0 +1,148 @@
+body {
+    background-color: #6f6f6f;
+}
+
+.content {
+    background-color: slategrey;
+    padding: 50px;
+    margin: 20px 0;
+}
+
+.content:hover .content__circle{
+    animation-play-state: paused; /*при нраведении по блок content, мы ставим на паузу анимацию content_circle*/
+}
+
+.content__circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+    /*animation-name: white-circle; !*определяет какик ключевые кадры будут применены*!*/
+    /*animation-duration: 2s; !*время анимации из состояния 0% в состояние 100% в keyframes*!*/
+    /*animation-timing-function: 	linear; !*сценарий анимации - ускорения, замедления. linear - линейно *!*/
+    /*animation-iteration-count: infinite; !*число повторений анимации, infinite - бесконечно *!*/
+    /*animation-direction: alternate; !*каждый четный проход - в обратную сторону*!*/
+    /*animation-delay: 2s; !*задержка перед началом анимации*!*/
+    /*animation-fill-mode: forwards; !*действия объекта анимации по завершении анимации. forward - оставить в конечном положении*!*/
+
+    /* универсальная запись animation, в которой за один раз указываются все свойства
+    Главное преимущество - можно применить сразу несколько keyframes - например, white-circle и red-circle,
+    тогда кружок будет не только смещаться, но и менять цвет*/
+    animation: white-circle 2s linear infinite alternate 0s forwards, red-circle 2s linear infinite alternate 0s forwards;
+}
+
+.content__ball {
+
+    display: block;
+    background: black;
+    margin: 0;
+    background: -webkit-radial-gradient(13px 15px, circle, #5cabff, #000);
+    background: radial-gradient(100px 100px, circle, #5cabff, #000); /*радиальная заливка - имитация блика мяча*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.1); /*тень мяча */
+    animation-name: balltransform; /*определяет какик ключевые кадры будут применены*/
+    animation-duration: 6s; /*время анимации из состояния 0% в состояние 100% в keyframes*/
+    animation-timing-function: linear; /*сценарий анимации - ускорения, замедления. linear - линейно */
+    animation-iteration-count: infinite; /*число повторений анимации, infinite - бесконечно*/
+
+}
+
+/*keyframes - ключевые кадры, описывает временные промежутки анимации white-circle*/
+@keyframes white-circle {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        border-radius: 0;
+    }
+
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes red-circle {
+    0% {
+        background-color: #fff;
+    }
+
+    20% {
+        background-color: greenyellow;
+    }
+
+    40% {
+        background-color: dodgerblue;
+    }
+
+    60% {
+        background-color: red;
+    }
+
+    60% {
+        background-color: mediumvioletred;
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}
+
+@keyframes balltransform {
+    10% {
+        top: 240px;
+        left: 150px;
+    }
+
+    20% {
+        top: 100px;
+        left: 250px;
+    }
+
+    30% {
+        top: 240px;
+        left: 350px;
+    }
+
+    40% {
+        top: 130px;
+        left: 440px;
+    }
+
+    50% {
+        top: 240px;
+        left: 550px;
+    }
+
+    60% {
+        top: 160px;
+        left: 650px;
+    }
+
+    70% {
+        top: 200px;
+        left: 700px;
+    }
+
+    80% {
+        top: 240px;
+        left: 760px;
+    }
+
+    90% {
+        top: 230px;
+        left: 800px;
+    }
+
+    100% {
+        top: 240px;
+        left: 850px;
+    }
+}

@@ -1,0 +1,91 @@
+/* общие стили кнопок */
+.button{
+
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    min-height: 60px;
+    padding: 0px 30px;
+    margin: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+}
+
+/* стили для конкретной кнопки */
+.button_1{
+
+    color: #fff;
+    background-color: #5e5373;
+    box-shadow: 0 5px 0px #3c354a;
+    transition-duration: 0.5s;
+    transition-property: background-color, padding, box-shadow;
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335)
+}
+
+.button_1:hover{
+    padding: 0px 50px;
+    box-shadow: 0 3px 0px #3c354a;
+    background-color: #18b5a4;
+}
+
+.button_2{
+    color: #fff;
+    border: none;
+    background-color: #aeaf76;
+    transition-duration: 0.6s;
+    transition-property: border, border-radius, background-color;
+    transition-timing-function: linear
+}
+
+.button_2:hover{
+    border: 5px solid #aeaf76;
+    background-color: #868654;
+    border-top-left-radius: 100% 20px;
+    border-bottom-right-radius: 100% 20px;
+}
+
+
+
+/*Стиль для галлереи фото*/
+.gallery {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 40px;
+}
+
+.gallery__img {
+    max-width: 200px;
+    margin: 20px 10px;
+    opacity: 50%;
+    transition-duration: 0.5s;
+    transition-property: opacity, margin,max-width;
+    transition-timing-function: linear;
+}
+
+.gallery__img:hover {
+    max-width: 250px;
+    opacity: 100%;
+}
+
+.background {
+    background-color: #fff;
+    background-image: radial-gradient(#000 2px, transparent 3px);
+    background-size: 10px 10px;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    transition-duration: 1s;
+    transition-property: background-size;
+    transition-timing-function: linear;
+}
+
+.background:hover {
+    background-size: 30px 30px;
+}
